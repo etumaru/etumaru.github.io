@@ -9,5 +9,5 @@ links:
   - text: Paper
     url: https://arxiv.org/abs/paper
   - text: Code
-    url: https://github.com/username/project
+    url: https://github.com/etumaru/project
 ---
