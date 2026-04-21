@@ -9,6 +9,9 @@ collections:
     sort_by: year
   research:
     output: true
+  projects:
+    output: true
+    sort_by: year
 
 defaults:
   - scope:
