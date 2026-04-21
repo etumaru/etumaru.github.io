@@ -2,7 +2,7 @@
 title: "<in the works>"
 authors: "Elijah"
 venue: "<TBF>"
-year: 202
+year: 2025
 status: "Under Peer Review"
 image: "/assets/images/paper-figure.jpg"
 links:
