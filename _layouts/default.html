@@ -285,7 +285,7 @@
   <hr>
 
   <section id="projects" class="section">
-    <h2>Projetcs</h2>
+    <h2>Projects</h2>
     {% assign projects_by_year = site.projects | group_by: "year" | sort: "name" | reverse %}
     {% for year in projects_by_year %}
     <div class="year-label">{{ year.name }}</div>
