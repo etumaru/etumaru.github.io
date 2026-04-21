@@ -1,5 +1,5 @@
 title: Elijah Wandimi
-description: Ph.D. Candidate in Computer Science
+description: Software Engineer
 baseurl: ""
 url: "https://etumaru.github.io"
 
@@ -19,6 +19,11 @@ defaults:
   - scope:
       path: ""
       type: "research"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "projects"
     values:
       layout: default
 

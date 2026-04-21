@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-I'm a Ph.D. candidate at [University], where I research numerical methods for PDEs under the supervision of [advisor].
+I'm a Software Engineer specializing in secure, scalable backend systems and high-availability services. Skilled in API design, distributed systems, production deployments at scale, and enterprise-grade delivery through robust monitoring, testing, and code quality practices.
+<!-- I'm a Ph.D. candidate at [University], where I research numerical methods for PDEs under the supervision of [advisor]. -->
 
-My research is supported by [funding/fellowships].
+<!-- My research is supported by [funding/fellowships]. -->
 
-Before coming to [University], I graduated from Multimedia University of Kenya.
-
-[//]: # (If you are a student from an underrepresented group looking for advice on pursuing research in [field], check out this [section]&#40;/resources&#41; or reach out by email. I'd be happy to help you and share resources!)
+<!-- Before coming to [University],  -->
+I graduated from Multimedia University of Kenya with a BSc in Software Engineering

@@ -139,6 +139,34 @@
           margin: 0.5rem 0;
       }
 
+      #projects {
+          margin-top: 2rem;
+      }
+
+      .project-entry {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          gap: 1.5rem;
+          margin-bottom: 2rem;
+      }
+
+      .project-entry img {
+          width: 200px;
+          height: auto;
+      }
+
+      .project-entry h3 {
+          margin: 0;
+          font-size: 1.1rem;
+          font-weight: normal;
+      }
+
+      .project-contributors {
+          color: #666;
+          font-size: 0.9rem;
+          margin: 0.5rem 0;
+      }
+
       em {
           font-style: italic;
           color: #666;
@@ -190,9 +218,10 @@
     </div>
     <div>
       <nav>
-        <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank">CV</a>
+        <a href="{{ site.baseurl }}/assets/ELIJAH_WANDIMI_Resume.pdf" target="_blank">Resume</a>
         <a href="#research">Research Interests</a>
         <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#resources">Resources</a>
       </nav>
     </div>
@@ -242,6 +271,36 @@
         {% if pub.links %}
         <p>
           {% for link in pub.links %}
+          <a href="{{ link.url }}">{{ link.text }}</a>
+          {% if forloop.last == false %} | {% endif %}
+          {% endfor %}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </section>
+
+  <hr>
+
+  <section id="projects" class="section">
+    <h2>Projetcs</h2>
+    {% assign projects_by_year = site.projects | group_by: "year" | sort: "name" | reverse %}
+    {% for year in projects_by_year %}
+    <div class="year-label">{{ year.name }}</div>
+    {% for proj in year.items %}
+    <div class="project-entry">
+      {% if proj.image %}
+      <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
+      {% endif %}
+      <div>
+        <h3>{{ proj.title }}</h3>
+        <p class="project-contributors">{{ proj.contributors }}</p>
+        <p><em>{{ proj.description }}</em></p>
+        {% if proj.links %}
+        <p>
+          {% for link in proj.links %}
           <a href="{{ link.url }}">{{ link.text }}</a>
           {% if forloop.last == false %} | {% endif %}
           {% endfor %}

@@ -1,8 +1,8 @@
 ---
-title: "Numerical Simulation of 3D Topography in Computer Graphics and Vision Using Hyperbolic and Parabolic PDEs"
-authors: "Your Name, Coauthor One, Coauthor Two"
-venue: "Conference Name"
-year: 2025
+title: "<in the works>"
+authors: "Elijah"
+venue: "<TBF>"
+year: 202
 status: "Under Peer Review"
 image: "/assets/images/paper-figure.jpg"
 links:
